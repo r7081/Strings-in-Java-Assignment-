@@ -1,0 +1,170 @@
+﻿1. Write a program to print a string entered by the user ??
+Ans : import java.util.Scanner;
+ class Ans{
+ public static void main(String[] args){
+ Scanner s = new Scanner(System.in);
+ String a = s.next(); 
+System.out.println(a);
+ }
+ }
+
+
+2. How do you concatenate two strings in Java and give an example?
+ Ans :
+ You can concatenate two strings in Java using the + operator:
+ String str1 = "Hello"; 
+  String str2 = "World"; 
+  String str3 = str1 + str2;
+3. How do you find the length of a string in Java Explain with an example?
+Ans : 
+The length of a string in Java can be found using the length() method:
+ String str = "example"; 
+ int length = str.length();
+4. How do you compare two strings in Java?
+Ans : Two strings in Java can be compared using the equals() method:
+ String str1 = "Hello"; String str2 = "Hello"; 
+if (str1.equals(str2)) { 
+System.out.println("The strings are equal");
+ }
+ else { 
+System.out.println("The strings are not equal");
+ }
+5. Write a program to find the length of the string "refrigerator" ??
+Ans :  class Ans{
+          public static void main(String[] args){ 
+          String a = "refrigerator";
+           System.out.println(a.length());
+           }
+        }
+6. Write a program to check if the letter 'e' is present in the word 'Umbrella' ?
+Ans :  class Ans{
+
+
+ public static void main(String[] args){
+
+
+ String a = "Umbrella";
+
+
+ boolean per = false;
+
+
+ for(int i = 0;i<a.length();i++){
+
+
+ if(a.charAt(i) == 'e'){
+
+
+ per=true;
+
+
+ break;
+
+
+ }
+
+
+ }
+
+
+ System.out.println(per);
+
+
+ }
+
+
+ }
+7. Write a program to delete all consonants from the string "Hello, have a good day". (Take input from the user).
+Ans : 
+ import java.util.Scanner;
+
+
+class delete
+
+
+{
+
+
+ public static void main(String args[])
+ 
+
+
+ {
+
+
+ String s;
+
+
+ int j=0;
+
+
+ System.out.println("Enter a string");
+
+
+ Scanner so=new Scanner(System.in);
+
+
+ s= so.nextLine();
+
+
+ char ch[]=new char[20];
+
+
+ for(int i=0;i<s.length();i++)
+
+
+ {
+
+
+ if(s.charAt(i)=='a'||s.charAt(i)=='A'||s.charAt(i)=='e'||
+
+
+ s.charAt(i)=='E'||s.charAt(i)=='i'||s.charAt(i)=='I'||s.charAt(i)=='o'||
+
+
+ s.charAt(i)=='O'||s.charAt(i)=='U'|| s.charAt(i)=='u')
+
+
+ {
+
+
+ ch[j++]=s.charAt(i);
+
+
+ }
+
+
+ else
+
+
+ {
+
+
+ continue;
+
+
+ }
+
+
+ }
+
+
+ for(int i=0;i<j;i++)
+
+
+ {
+
+
+ System.out.print(ch[i]);
+
+
+ }
+
+
+ System.out.println();
+
+
+}
+
+
+}

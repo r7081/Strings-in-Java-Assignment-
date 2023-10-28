@@ -1,0 +1,89 @@
+﻿1.Write a java program to Reverse a string without using the inbuilt method ?
+  Ans:public class StringReverse {
+        public static void main(String[] args) {
+                String name = "Hello hi";
+                String reverse="";
+
+
+                for (int i = name.length() - 1; i >=0; i--) {
+                        char chaar = name.charAt(i);
+                        reverse = reverse + char;
+                }
+                System.out.println(reverse);
+        }
+}
+
+
+2.Write a java program to know whether the given string is palindrome ??
+Ans: import java.util.*;
+
+
+class Palindrome {
+        public static void main(String args[]) {
+                String original, reverse = ""; 
+                Scanner in = new Scanner(System.in);
+                System.out.println("Enter a string to check if it is a palindrome");
+                original = in.nextLine();
+                int length = original.length();
+                for (int i = length - 1; i >= 0; i--)
+                        reverse = reverse + original.charAt(i);
+                if (original.equals(reverse))
+                        System.out.println("Entered string is a palindrome.");
+                else
+                        System.out.println("Entered string isn't a palindrome.");
+        }
+}
+
+
+3.Write a java program to convert upper case to lower case and vice versa ??
+Ans:  public class UpperToLowerCase {
+        public static void main(String[] args) {
+                String S1 = "ineuron";
+                String S2 = "";
+                for (int i = 0; i < S1.length(); i++) {
+                        if ((S1.charAt(i) >= 'a') && (S1.charAt(i) <= 'z')) {
+                                S2 = S2 + (char) (S1.charAt(i) - 32);
+
+
+                        } else if ((S1.charAt(i) >= 'A') && (S1.charAt(i) <= 'Z')) {
+                                S2 = S2 + (char) (S1.charAt(i) + 32);
+
+
+                        }
+
+
+                }
+                System.out.println(S2);
+        }
+
+
+}
+
+
+4.Write a java program to remove a particular character from a String ??
+Ans:  public class RemoveChar {
+        public static void main(String args[]) {
+                String str = "this is Java";
+                System.out.println(removeCharAt(str, 3));
+        }
+
+
+        public static String removeCharAt(String s, int pos) {
+                return s.substring(0, pos) + s.substring(pos + 1);
+        }
+}
+
+
+5.Write a java program to find the index of a substring ??
+Ans :public class SearchString{
+           public static void main(String[] args) {
+              String strOrig = "Hello readers";
+              int intIndex = strOrig.indexOf("Hello");
+              
+              if(intIndex == - 1) {
+                 System.out.println("Not found");
+              } else {
+                 System.out.println("Found at index " + intIndex);
+              }
+           }
+        }
